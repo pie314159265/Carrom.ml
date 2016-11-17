@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/Continue Page.unity
+  isLoaded: 1
+  isActive: 1
