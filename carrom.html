@@ -51,9 +51,9 @@ ul.tab li a:focus, .active {
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Test</title>
-    <link rel="stylesheet" href="https://github.com/susw12/Carrom.ml/blob/site/Images/style.css">
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/susw12/Carrom.ml/site/Images/favicon.ico" />
-    <script src="/Magic/UnityLoader.js"></script>
+    <link rel="stylesheet" href="Carrom.ml/Images/style.css">
+    <link rel="shortcut icon" href="Carrom.ml/Images/favicon.ico" />
+    <script src="Carrom.ml/Images/UnityProgress.js"></script>
   </head>
 <body class = "template">
 
@@ -79,7 +79,7 @@ ul.tab li a:focus, .active {
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="500px" width="1400px"></canvas>
 	  <br>
       <div class="logo"></div>
-      <div class="fullscreen"><img src="https://github.com/susw12/Carrom.ml/blob/site/Images/fullscreen.png" width="50" height="50" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="fullscreen"><img src="Carrom.ml/Images/fullscreen.png" width="50" height="50" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
       <div class="title">Test</div>
     </div>
     <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
@@ -104,7 +104,7 @@ ul.tab li a:focus, .active {
   <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
   <h3>Credits</h3>
   <p>Developers:</p>
-  <ol>Aaron Mei</p>
+  <ol><p>Aaron Mei</p>
   <p>Daniel Monroe</p>
   <p>Sujay Swain</p>
   </ol>
@@ -121,9 +121,9 @@ var Module = {
     TOTAL_MEMORY: 268435456,
     errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
     compatibilitycheck: null,
-    dataUrl: "/home/carromx1/public_html/Magic/Carromml.data",
-    codeUrl: "/home/carromx1/public_html/Magic/Carromml.js",
-    memUrl: "/home/carromx1/public_html/Magic/Carromml.mem",
+    dataUrl: "Carrom.ml/Magic/Carromml.data",
+    codeUrl: "Carrom.ml/Magic/Carromml.js",
+    memUrl: "Carrom.ml/Magic/Carromml.mem",
   };
   
 function openCity(evt, cityName) {
@@ -143,7 +143,7 @@ function openCity(evt, cityName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-<script src="https://github.com/susw12/Carrom.ml/blob/site/Magic/UnityLoader.js"></script>
+<script src="Carrom.ml/Magic/UnityLoader.js"></script>
 
 </body>
 </html>
