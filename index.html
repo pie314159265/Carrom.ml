@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<script>
+window.alert("Please use Mozilla Firefox for the best experience")
+</script>
+<style>
+body {font-family: "times new roman", sans-serif; background-color: linen;}
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+ul.tab li {float: left;}
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.topright {
+ float: right;
+ cursor: pointer;
+ font-size: 20px;
+}
+.topright:hover {color: red;}
+</style>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Test</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/susw12/Carrom.ml/site/Images/style.css">
+    <link rel="shortcut icon" href="https://cdn.rawgit.com/susw12/Carrom.ml/site/Images/favicon.ico" />
+    <script type='text/javascript'src="https://cdn.rawgit.com/susw12/Carrom.ml/site/Images/UnityProgress.js"></script>
+  </head>
+<body class = "template">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJP6SM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</a></li>
+  <li><a herf="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Rules')">Rules</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Game')">Game</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Contacts')">Contacts</a></li>
+  <li><a herf="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Credits')">Credits</a></li>
+  <li><a herf="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Sitemap')">Sitemap</a></li>
+</ul>
+
+<div id="Home" class="tabcontent">
+  <h2>Home</h2>
+  <h3>Hi There! We're not done yet!</h3>
+  <p>Click <a HREF="https://www.google.com/">here</a> to go back to Google</p>
+</div>
+
+<div id="Rules" class="tabcontent">
+  <h2>Rules</h2>
+  <pre>
+<h3>Objective</h3>
+
+Players take turns to play.  A turn consists of one or more strikes. A player wins by pocketing all of the pieces of their chosen colour first. 
+However, neither player can win until one or other player has "covered the Queen".  
+To cover the Queen, a player must pocket one of her own pieces immediately after pocketing the Queen.  
+If the Queen is pocketed but not covered, the Queen is returned to the board.  
+Both players normally try to cover the Queen in addition to trying to win the game because a player who wins and also covers the Queen receives bonus points.
+
+<h3>Striking</h3>
+
+For each strike, the player must position the striker within the baseline OR on one of the two circles at either end of the baseline.
+A striker within the baseline must touch both the front line and the rear line.
+The striker may not "cut the moon" - be placed partially within the baseline and partially within the circle. 
+The player must flick the striker with one finger so that it crosses the front baseline - it is not permitted to flick backwards or horizontally. 
+A piece that is on or behind the front baseline must not be struck by the striker until the striker has crossed the front baseline.
+In striking, the player's hand or arm must not cross the diagonal foul lines at either end of the baseline.
+Basic rules
+
+For the very first turn, the player is allowed three attempts to "break" i.e. disturb the central group of counters.
+It doesn't matter which piece the striker hits first and it doesn't matter if the striker hits no pieces.
+If a the striker pockets the Queen and/or one or more pieces of her own colour, the player retrieves the striker and takes another strike.
+If the player pockets no pieces or commits a foul, the turn finishes.
+Covering the Queen
+
+A player may only pocket and cover the Queen if that player has already pocketed at least one piece of that player's colour.
+Should a player pocket the Queen before being permitted to cover it, the turn continues but the Queen is returned to the centre at the end of the turn.
+If a player pockets the Queen and one of her own pieces in the same turn, this counts and that player has covered the Queen.  
+Such a player must have already pocketed at least one piece in order to cover the Queen as per normal.
+When a player pockets the Queen but does not cover it, the Queen is returned as near as possible to the centre circle by the opponent.
+
+<h3>Other Rules</h3>
+
+Pieces returned to the centre can be placed on top of other pieces within the main circle.
+If pieces come to rest standing on their edge or overlapping another piece, they are left as they are until moved again in the normal course of play. 
+If the striker comes to rest under another piece, the striker should be removed with as little disturbance to the covering piece as possible.
+
+<h3>Scoring</h3>
+
+At the end of the game the winner scores 1 point for each opponent's piece left on the board.
+If the winner has less than 24 points and the winner also covered the Queen, a bonus 5 points are scored.
+If the winner has 24 or more points, then no points are scored for covering the Queen.
+
+The maximum score for one game is therefore 14 points.  A match is played to 29 points.</pre>
+</div>
+
+<div id="Game" class="tabcontent">
+  <h1>Under Construction! Here's a Demo :)(Supported only by Mozilla Firefox)</h1>
+  <p class="header"><span>Unity WebGL Player | </span>Test</p>
+  <div><h3>Instructions for Demo Game: </h3>
+  <p>It's very simple! Use the arrow keys to move the ball around the playing field</p>
+  </div>
+    <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="500px" width="1400px"></canvas>
+	  <br>
+      <div class="logo"></div>
+      <div class="fullscreen"><img src="https://cdn.rawgit.com/susw12/Carrom.ml/site/Images/fullscreen.png" width="50" height="50" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="title">Test</div>
+    </div>
+    <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+</div>
+
+<div id="Contacts" class="tabcontent">
+  <h3>Contacts</h3>
+  <p>Contact us at:</p>
+  <ol><p><a href="mailto:meiaaron99@gmail.com" title="Send an email to meiaaron99@gmail.com">meiaaron99@gmail.com</a></p>
+  <p><a href="mailto:sujaymswain@gmail.com" title="Send an email to sujaymswain@gmail.com">sujaymswain@gmail.com</a></p>
+  <p><a href="mailto:danielmonroe0606@gmail.com" title="Send an email to danielmonroe0606@gmail.com">danielmonroe0606@gmail.com</a></p>
+  </ol>
+  <a>Please email suggestions to:</a>
+  <ol>
+  <p><a href="mailto:adscarrom@gmail.com" title="Send an email to adscarrom@gmail.com">adscarrom@gmail.com</a></p>
+  <p><a href="mailto:adscarrom@outlook.com" title="Send an email to adscarrom@outlook.com">adscarrom@outlook.com</a></p>
+  </ol>
+</div>
+
+<div id="Credits" class="tabcontent">
+  <h3>Credits</h3>
+  <p>Developers:</p>
+  <ol><p>Aaron Mei</p>
+  <p>Daniel Monroe</p>
+  <p>Sujay Swain</p>
+  </ol>
+  <a>Resources: </a>
+  <ol>
+  <p>Codecademy</p>
+  <p>W3school tutorials</p>
+  </ol>
+</div>
+
+<div id="Sitemap" class="tabcontent">
+  <h3>Sitemap</h3>
+  <pre>
+  Home
+  Rules
+  Game
+  Contacts
+  Credits
+  Sitemap
+  </pre>
+
+</div>
+
+<script type='text/javascript'>
+var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "https://cdn.rawgit.com/susw12/Carrom.ml/site/Magic/Carromml.data",
+    codeUrl: "https://cdn.rawgit.com/susw12/Carrom.ml/site/Magic/Carromml.js",
+    memUrl: "https://cdn.rawgit.com/susw12/Carrom.ml/site/Magic/Carromml.mem",
+  };
+  
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<script type='text/javascript' src="https://cdn.rawgit.com/susw12/Carrom.ml/site/Magic/UnityLoader.js"></script>
+
+</body>
+</html>
