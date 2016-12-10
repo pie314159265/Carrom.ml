@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<script>
-window.alert("Please use Mozilla Firefox for the best experience")
-</script>
+
 <style>
-
 body {font-family: "times new roman", sans-serif; background-color: linen;}
-
 ul.tab {
     list-style-type: none;
     margin: 0;
@@ -15,26 +11,22 @@ ul.tab {
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
-
 ul.tab li {float: left;}
 ul.tab li a {
     display: inline-block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 60px;
     text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
+    transition: 0.27s;
+    font-size: 25px;
 }
-
 ul.tab li a:hover {
     background-color: #ddd;
 }
-
 ul.tab li a:focus, .active {
     background-color: #ccc;
 }
-
 /* Style the tab content */
 .tabcontent {
     display: none;
@@ -42,15 +34,12 @@ ul.tab li a:focus, .active {
     border: 1px solid #ccc;
     border-top: none;
 }
-
 .topright {
  float: right;
  cursor: pointer;
  font-size: 20px;
 }
-
 .topright:hover {color: red;}
-
 </style>
 <head>
     <meta charset="utf-8">
@@ -67,11 +56,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <ul class="tab">
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</a></li>
-  <li><a herf="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Rules')">Rules</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Rules')">Rules</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Game')">Game</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Contacts')">Contacts</a></li>
-  <li><a herf="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Credits')">Credits</a></li>
-  <li><a herf="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Sitemap')">Sitemap</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Credits')">Credits</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Sitemap')">Sitemap</a></li>
 </ul>
 
 <div id="Home" class="tabcontent">
@@ -129,19 +118,17 @@ The maximum score for one game is therefore 14 points.  A match is played to 29 
 </div>
 
 <div id="Game" class="tabcontent">
-  <h1>Under Construction! Here's a Demo :)(Supported only by Mozilla Firefox)</h1>
+  <h1>Under Construction! Here's a Demo :)</h1>
   <p class="header"><span>Unity WebGL Player | </span>Test</p>
   <div><h3>Instructions for Demo Game: </h3>
-  <p>It's very simple! Use the arrow keys to move the ball around the playing field</p>
+  <p>It's very simple! Use the arrow keys to move the ball around the playing field.</p>
   </div>
-    <div class="template-wrap clear">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="500px" width="1400px"></canvas>
-	  <br>
+  <div class="template-wrap clear">
+  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="375px" width="1080px"></canvas>
       <div class="logo"></div>
       <div class="fullscreen"><img src="https://cdn.rawgit.com/susw12/Carrom.ml/site/Images/fullscreen.png" width="50" height="50" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-      <div class="title">Test</div>
+      <p>&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
     </div>
-    <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
 </div>
 
 <div id="Contacts" class="tabcontent">
@@ -186,7 +173,6 @@ The maximum score for one game is therefore 14 points.  A match is played to 29 
 </div>
 
 <script type='text/javascript'>
-
 var Module = {
     TOTAL_MEMORY: 268435456,
     errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
@@ -209,7 +195,6 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
