@@ -1,13 +1,13 @@
 class user {
-	constructor(name, passcode, wins, losses, rating) {
+	constructor("name", "passcode", "wins", "losses", "rating") {
 		var self = this
-		var self.name = name;
-		var self.passcode = passcode
-		temp = 0 || wins
+		var self.name = "name";
+		var self.passcode = "passcode";
+		temp = 0 || "wins";
 		var self.wins = temp;
-		temp = 0 || losses;
+		temp = 0 || "losses";
 		var self.losses = temp;
-		temp = 1200 || rating
+		temp = 1200 || "rating";
 		var self.rating = temp;
 		del temp;
 		self.updateData()
