@@ -35,6 +35,7 @@ class user {
 }
 
 	updateData() {
+		
 		//return name + ' ' + str(wins) + ' ' + lo
 		
 		
