@@ -1,13 +1,13 @@
 class user {
-	constructor("name", "passcode", "wins", "losses", "rating") {
+	constructor(name, passcode, wins, losses, rating) {
 		var self = this
-		var self.name = "name";
-		var self.passcode = "passcode";
-		temp = 0 || "wins";
+		var self.name = name;
+		var self.passcode = passcode;
+		temp = 0 || wins;
 		var self.wins = temp;
-		temp = 0 || "losses";
+		temp = 0 || losses;
 		var self.losses = temp;
-		temp = 1200 || "rating";
+		temp = 1200 || rating;
 		var self.rating = temp;
 		del temp;
 		self.updateData()
@@ -49,6 +49,8 @@ class Game () {
 	function constructor (username) {
 		var self = this;
 		self.LEADERLENGTH = 20;
+		self.HEADERHEIGHT = 40;
+		self.HEADERSIZE = 20; //refers to text size
 		self.name = username;
 		self.user = -1;
 		updateUsers();
@@ -80,7 +82,7 @@ class Game () {
 		updateUsers();
 		leaderboard = [];
 		for (user in self.users) {
-			if user.rating > leaderboard[leaderboard.length-1] {
+			if user.rating > leaderboard[leaderboard.length-1] || leaderboard.length < self.LEADERLENGTH {
 				del leaderboard[leaderboard.length-1];
 				
 				for (index=1, index < leaderboard.length, index ++) {
@@ -95,6 +97,49 @@ class Game () {
 		
 		
 	}
+
+		
+	function drawHeader () {
+		<input id ='menubox' type='text' disabled='disabled' 
+		value='Menu' style='background-color:Gray; color:Black; text-align:center; width:100px;'/> 
+		document.getElementById('menu').height = self.HEADERHEIGHT
+		document.getElementById('menu').font-size = self.HEADERSIZE // !!help here
+		
+		<input id ='userbox' type='text' disabled='disabled' 
+		style='background-color:Orange; color:Black; text-align:center; width:100px;'/> 
+		document.getElementById('userbox').height = self.HEADERHEIGHT
+		document.getElementById('userbox').font-size = self.HEADERSIZE
+		document.getElementById('userbox').value = self.user.name
+		
+		<input id ='mainbox' type='text' disabled='disabled' 
+		value='Menu' style='background-color:Orange; color:Gray; text-align:center; width:250px;'/> 
+		document.getElementById('mainbox').height = self.HEADERHEIGHT
+		document.getElementById('mainbox').font-size = self.HEADERSIZE
+		
+		<input id ='winsbox' type='text' disabled='disabled' 
+		style='background-color:Green; color:Black; text-align:center; width:50px;'/> 
+		document.getElementById('winsbox').height = self.HEADERHEIGHT
+		document.getElementById('winsbox').font-size = self.HEADERSIZE
+		document.getElementById('winsbox').value = self.user.wins
+		
+		<input id ='lossesbox' type='text' disabled='disabled' 
+		style='background-color:Red; color:Black; text-align:center; width:50px;'/> 
+		document.getElementById('lossesbox').height = self.HEADERHEIGHT
+		document.getElementById('lossesbox').font-size = self.HEADERSIZE
+		document.getElementById('lossesbox').value = self.user.losses
+		
+		<input id ='ratingbox' type='text' disabled='disabled' 
+		style='background-color:Red; color:Yellow; text-align:center; width:50px;'/> 
+		document.getElementById('ratingbox').height = self.HEADERHEIGHT
+		document.getElementById('ratingbox').font-size = self.HEADERSIZE
+		document.getElementById('ratingbox').value = self.user.rating
+		
+		
+		
+		
+		
+	}
+		
     
     
     }
