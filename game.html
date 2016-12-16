@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
+<p>This is a test<\p>
 
 <script>
 class user {
@@ -90,7 +91,7 @@ class Game () {
 			if user.rating > leaderboard[leaderboard.length-1] || leaderboard.length < self.LEADERLENGTH {
 				del leaderboard[leaderboard.length-1];
 				
-				for (index=1, index < leaderboard.length, index ++) {
+				for (index=1, index <= leaderboard.length, index ++) {
 					if user.rating < leaderboard[index].rating {
 						leaderboard.splice(index + 1, 0, user) //insert after
 						break;
@@ -102,13 +103,30 @@ class Game () {
 		
 		
 	}
+		
+	function drawLeaderboard () {
+		<table id = 'leaderboard' 
+		style='color: Black; background-color: Gray;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px'>
+		<caption> Leaderboard </caption>
+		for (index=1, index <= leaderboard.length, index++) {
+			var leader = leaderboard[index]
+			<tr>
+			<td> str(index) + '.' </td>
+			<td> leader.name </td>
+			<td> str(leader.rating) </td>
+			</tr>
+		}
+	
+	</table>
+		
+	}
 
 		
 	function drawHeader () {
 		<input id ='menubox' type='text' disabled='disabled' 
 		value='Menu' style='background-color:Gray; color:Black; text-align:center; width:100px;'/> 
 		document.getElementById('menu').height = self.HEADERHEIGHT
-		document.getElementById('menu').font-size = self.HEADERSIZE // !!help here
+		document.getElementById('menu').font-size = self.HEADERSIZE // !!help here why is size yellow
 		
 		<input id ='userbox' type='text' disabled='disabled' 
 		style='background-color:Orange; color:Black; text-align:center; width:100px;'/> 
@@ -125,19 +143,19 @@ class Game () {
 		style='background-color:Green; color:Black; text-align:center; width:50px;'/> 
 		document.getElementById('winsbox').height = self.HEADERHEIGHT
 		document.getElementById('winsbox').font-size = self.HEADERSIZE
-		document.getElementById('winsbox').value = self.user.wins
+		document.getElementById('winsbox').value = str(self.user.wins)
 		
 		<input id ='lossesbox' type='text' disabled='disabled' 
 		style='background-color:Red; color:Black; text-align:center; width:50px;'/> 
 		document.getElementById('lossesbox').height = self.HEADERHEIGHT
 		document.getElementById('lossesbox').font-size = self.HEADERSIZE
-		document.getElementById('lossesbox').value = self.user.losses
+		document.getElementById('lossesbox').value = str(self.user.losses)
 		
 		<input id ='ratingbox' type='text' disabled='disabled' 
 		style='background-color:Red; color:Yellow; text-align:center; width:50px;'/> 
 		document.getElementById('ratingbox').height = self.HEADERHEIGHT
 		document.getElementById('ratingbox').font-size = self.HEADERSIZE
-		document.getElementById('ratingbox').value = self.user.rating
+		document.getElementById('ratingbox').value = 'Rating: ' + str(self.user.rating)
 		
 		
 		
@@ -159,8 +177,6 @@ class Game () {
 	
 	
 }
-
-
 
 function readFile(evt) {
 	  
@@ -201,6 +217,14 @@ function readFile(evt) {
     }
   }
   document.getElementById('fileinput').addEventListener('change', readFile, false);
+	
+	
+//________________________________________________________________________________________________________________
+
+function main () {
+	var game = new Game()
+	
+}
 </script>
 
 </body>
